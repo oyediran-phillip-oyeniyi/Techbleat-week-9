@@ -28,7 +28,7 @@ jobs:
           terraform_version: "1.6.6"
       
       - name: Terraform Initialization
-        run: terraform init
+        run: terraform init -reconfigure
       
       - name: Terraform Validation
         run: terraform validate
