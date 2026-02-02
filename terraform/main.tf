@@ -28,7 +28,7 @@ provider "aws" {
 resource "aws_security_group" "nginx-sg" {
   name = "nginx-sg"
   description = "Allow SSH and Port 80 inbound, all outbound"
-  vpc_id = data.aws_vpc.default.id
+  vpc_id = var.vpc
 
   ingress {
     from_port = 22
@@ -80,7 +80,7 @@ resource "aws_instance" "nginx-node" {
 resource "aws_security_group" "java-sg" {
   name = "nginx-sg"
   description = "Allow SSH and Port 80 inbound, all outbound"
-  vpc_id = data.aws_vpc.default.id
+  vpc_id = var.vpc
 
   ingress {
     from_port = 22
@@ -132,7 +132,7 @@ resource "aws_instance" "java-node" {
 resource "aws_security_group" "ansible-sg" {
   name = "ansible-sg"
   description = "Allow SSH and Port 80 inbound, all outbound"
-  vpc_id = data.aws_vpc.default.id
+  vpc_id = var.vpc
 
   ingress {
     from_port = 22
