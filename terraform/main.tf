@@ -21,10 +21,6 @@ provider "aws" {
     region = "eu-west-1"
 }
 
-data "vpc" "default" {
-    default = true
-}
-
 #-------------------------------------
 # Nginx Node Security Group
 #-------------------------------------
