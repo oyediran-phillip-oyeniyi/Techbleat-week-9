@@ -39,7 +39,7 @@ jobs:
 
       - name: Terraform Apply
         working-directory: terraform
-        run: terraform apply -var-file="phil.tfvars" -auto-approve'
+        run: terraform apply -var-file="phil.tfvars" -auto-approve
 
 
       
