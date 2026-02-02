@@ -78,7 +78,7 @@ resource "aws_instance" "nginx-node" {
 #-------------------------------------
 
 resource "aws_security_group" "java-sg" {
-  name = "nginx-sg"
+  name = "java-sg"
   description = "Allow SSH and Port 80 inbound, all outbound"
   vpc_id = var.vpc
 
