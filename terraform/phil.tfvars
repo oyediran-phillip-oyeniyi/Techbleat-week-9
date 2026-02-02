@@ -1,0 +1,5 @@
+key_name = "aws-key"
+ami = "ami-096f46d460613bed4"
+instance_type = "t3.micro"
+project_subnet = "subnet-05879e6898e207a2b"
+vpc = "vpc-0f5f9c0f75055b3a0"
